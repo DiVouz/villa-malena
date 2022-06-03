@@ -1,4 +1,8 @@
-$(document).ready( resizeObjects );
+$(document).ready(  );
+$(document).ready(function() {
+    resizeObjects();
+    imageSliderGoTo(imageSliderIndex);
+});
 
 $(window).resize( resizeObjects );
 
@@ -48,31 +52,6 @@ $("#buttonContact, #buttonContactSm").click(function() {
     }, 1000);
 });
 
-var slideIndex = 1;
-var slideId = ["slides"];
-showSlides(1);
-
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
-
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-    var i;
-    var x = document.getElementsByClassName(slideId);
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-    }
-    
-    x[slideIndex-1].style.display = "block";
-}
-
 $("#servicesMoreButton").click(function() {
     var $this = $(this); 
     var $content = $("#servicesToHide");
@@ -117,5 +96,75 @@ maxWidth.addListener(myFunction);
 function myFunction(x) {
     if (!x.matches) {
         $(".navButSm").hide();
+    }
+}
+
+// slider
+
+let imageSliderIndex = 0;
+let imageSliderData = {
+    "images": [
+        "img/HousePhotos/house1.jpg",
+        "img/HousePhotos/house2.jpg",
+        "img/HousePhotos/house3.jpg",
+        "img/HousePhotos/house4.jpg",
+        "img/HousePhotos/house5.jpg",
+        "img/HousePhotos/house6.jpg",
+        "img/HousePhotos/house7.jpg",
+        "img/HousePhotos/house8.jpg",
+        "img/HousePhotos/house9.jpg",
+        "img/HousePhotos/house10.jpg",
+        "img/HousePhotos/house11.jpg",
+        "img/HousePhotos/house12.jpg",
+        "img/HousePhotos/house13.jpg",
+        "img/HousePhotos/house14.jpg",
+        "img/HousePhotos/house15.jpg",
+        "img/HousePhotos/house16.jpg",
+        "img/HousePhotos/house17.jpg",
+        "img/HousePhotos/house18.jpg",
+        "img/HousePhotos/house19.jpg",
+        "img/HousePhotos/house20.jpg",
+        "img/HousePhotos/house21.jpg",
+        "img/HousePhotos/house22.jpg",
+        "img/HousePhotos/house23.jpg",
+        "img/HousePhotos/house24.jpg",
+        "img/HousePhotos/house25.jpg",
+        "img/HousePhotos/house26.jpg"
+    ]
+};
+
+function imageSliderAdd(amount) {
+    imageSliderIndex += amount;
+
+    if (imageSliderIndex > (imageSliderData.images.length - 1)) {
+        imageSliderIndex = imageSliderIndex % imageSliderData.images.length;
+    } else if (imageSliderIndex < 0) {
+        imageSliderIndex = Math.abs(imageSliderIndex + imageSliderData.images.length) % imageSliderData.images.length;
+    }
+
+    imageSliderGoTo(imageSliderIndex);
+}
+
+function imageSliderGoTo(index) {
+    if (index > imageSliderData.images.length) {
+        index = imageSliderData.images.length;
+    } else if (index < 0) {
+        index = 0;
+    }
+
+    imageSliderIndex = index;
+
+    let imgElement = $("#imagesTab_img");
+
+    if (imgElement) {
+        imgElement.stop(true, false).animate({
+            opacity: -1.0,
+        }, 200, function() {
+            imgElement.attr("src", imageSliderData.images[index]);
+
+            imgElement.stop(true, false).animate({
+                opacity: 1.0,
+            }, 200);
+        });
     }
 }

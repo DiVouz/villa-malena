@@ -225,77 +225,23 @@
 		</div>
 
 		<div class="container conWhite" id="images">
-			<div class="slideshow">
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house1.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house2.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house3.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house4.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house5.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house6.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house7.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house8.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house9.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house10.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house11.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house12.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house13.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house14.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house15.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house16.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house17.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house18.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house19.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house20.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house21.jpg" alt="houseImage" style="width:100%">
-                </div>
-                <div class="slides">
-                    <img loading="lazy" src="img/HousePhotos/house22.jpg" alt="houseImage" style="width:100%">
-                </div>
+            <div class="container imagesTab" id="imagesTab">
+				<div class="title"><lang id="imagesTab_title"></lang></div>
 
-                <a class="slidePrev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="slideNext" onclick="plusSlides(1)">&#10095;</a>
-            </div>
+				<div class="main">
+					<div class="arrow_left" onclick="imageSliderAdd(-1);"><i class="fas fa-chevron-left"></i></div>
+					<div class="arrow_right" onclick="imageSliderAdd(+1);"><i class="fas fa-chevron-right"></i></div>
+
+					<div class="img">
+						<div class="real_img">
+							<img height="100%" width="100%" loading="lazy" src="" id="imagesTab_img" alt="">
+						</div>
+
+						<div class="description" id="imagesTab_description">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="container conBlue" id="map">
