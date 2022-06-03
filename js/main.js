@@ -1,4 +1,3 @@
-$(document).ready(  );
 $(document).ready(function() {
     resizeObjects();
     imageSliderGoTo(imageSliderIndex);
