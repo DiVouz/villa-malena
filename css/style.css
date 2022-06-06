@@ -223,9 +223,9 @@ img {
 
     padding: 8px;
     
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     
-    color: rgb(180, 180, 180);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 2em;
 
     cursor: pointer;
@@ -238,7 +238,7 @@ img {
 .imagesTab > .main > .arrow_left:hover,
 .imagesTab > .main > .arrow_right:hover {
     background-color: rgba(0, 0, 0, 0.9);
-    color: rgb(220, 220, 220);
+    color: rgba(255, 255, 255, 1.0);
 }
 
 .imagesTab > .main > .arrow_left {
