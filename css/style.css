@@ -62,7 +62,7 @@
 
     background-image: url("../img/main.jpg");
     background-attachment: fixed !important;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }

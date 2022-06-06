@@ -10,53 +10,67 @@ function resizeObjects() {
 }
 
 $("#buttonFindMore").click(function() {
+    openNavBar(true);
+    
     $('html, body').stop(true, false).animate({
         scrollTop: $("#services").offset().top-$("#navbar").height()
-    }, 1000);
+    }, 500);
 });
 
 $("#buttonLogo").stop(true, false).click(function() {
+    openNavBar(true);
+    
     $('html, body').stop(true, false).animate({
         scrollTop: $("#conImg").offset().top
-    }, 1000);
+    }, 500);
 });
 
 $("#buttonServices, #buttonServicesSm").click(function() {
+    openNavBar(true);
+    
     $('html, body').stop(true, false).animate({
         scrollTop: $("#services").offset().top-$("#navbar").height()
-    }, 1000);
+    }, 500);
 });
 
 $("#buttonDescription, #buttonDescriptionSm").click(function() {
+    openNavBar(true);
+    
     $('html, body').stop(true, false).animate({
         scrollTop: $("#description").offset().top-$("#navbar").height()
-    }, 1000);
+    }, 500);
 });
 
 $("#buttonImages, #buttonImagesSm").click(function() {
+    openNavBar(true);
+    
     $('html, body').stop(true, false).animate({
         scrollTop: $("#images").offset().top-$("#navbar").height()
-    }, 1000);
+    }, 500);
 });
 
 $("#buttonMap, #buttonMapSm").click(function() {
+    openNavBar(true);
+    
     $('html, body').stop(true, false).animate({
         scrollTop: $("#map").offset().top-$("#navbar").height()
-    }, 1000);
+    }, 500);
 });
 
 $("#buttonContact, #buttonContactSm").click(function() {
+    openNavBar(true);
+    
     $('html, body').stop(true, false).animate({
         scrollTop: $("#contact").offset().top-$("#navbar").height()
-    }, 1000);
+    }, 500);
 });
 
 $("#servicesMoreButton").click(function() {
-    var $this = $(this); 
-    var $content = $("#servicesToHide");
-    var linkText = $this.text();
+    let $this = $(this); 
+    let $content = $("#servicesToHide");
+    let linkText = $this.text();
 
-    $content.toggle(1000);
+    $content.toggle(500);
 
     if(linkText === "Show More"){
         linkText = "Show Less";
@@ -68,11 +82,11 @@ $("#servicesMoreButton").click(function() {
 });
 
 $("#descriptionMoreButton").click(function() {
-    var $this = $(this); 
-    var $content = $("#descriptionToHide");
-    var linkText = $this.text();
+    let $this = $(this); 
+    let $content = $("#descriptionToHide");
+    let linkText = $this.text();
 
-    $content.toggle(1000);
+    $content.toggle(500);
 
     if(linkText === "Show More"){
         linkText = "Show Less";
@@ -83,12 +97,14 @@ $("#descriptionMoreButton").click(function() {
     $this.text(linkText);
 });
 
-var navbarIsOpen = false;
-function openNavBar() {
-    $(".navButSm").toggle(1000);
+function openNavBar(forceClose = false) {
+    if (forceClose === true)
+        $(".navButSm").stop(true, false).hide(500);
+    else
+        $(".navButSm").stop(true, false).toggle(500);
 }
 
-var maxWidth = window.matchMedia("(max-width: 1000px)");
+let maxWidth = window.matchMedia("(max-width: 1000px)");
 myFunction(maxWidth);
 maxWidth.addListener(myFunction);
 
