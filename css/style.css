@@ -208,7 +208,6 @@ img {
 
     margin: auto;
 
-    max-width: 1200px;
     height: calc(80vh - 70px);
 
     background-color: #2d3e50;
@@ -272,7 +271,7 @@ img {
     width: 100%;
     height: auto;
 
-    max-height: calc(100% - 1px);
+    max-height: 100%;
 
     top: 50%;
     transform: translateY(-50%);
@@ -306,7 +305,6 @@ img {
 .mapTab > .map {
     margin: auto;
 
-    max-width: 1200px;
     height: calc(80vh - 70px);
 }
 
