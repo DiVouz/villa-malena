@@ -144,7 +144,8 @@ let imageSliderData = {
         "img/HousePhotos/house23.jpg",
         "img/HousePhotos/house24.jpg",
         "img/HousePhotos/house25.jpg",
-        "img/HousePhotos/house26.jpg"
+        "img/HousePhotos/house26.jpg",
+        "img/HousePhotos/house27.jpg"
     ]
 };
 
