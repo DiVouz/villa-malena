@@ -1,292 +1,499 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta name="google-site-verification" content="B7rd-y21yAkHX4Wlba-4vRRRqDb03-5bTCIG7uCmW8o" />
-        <meta name="robots" content="index, follow">
-
-	    <meta name="description" content="Boasting a seasonal outdoor swimming pool and a garden, Villa Malena offers accommodation in Glóssa with free WiFi and sea views.">
-	    <meta name="keywords" content="Villa Malena, villa, Malena, Μαλενα, Skopelos, Glossa, Glóssa, loutraki, accommodations, rent, greece, holiday rentals">
-
-		<title>Villa Malena</title>
-    
-    	<link rel="icon" href="img/logo.ico">
-
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
-		
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
-		<link rel="stylesheet" href="css/style.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="google-site-verification"
+			content="B7rd-y21yAkHX4Wlba-4vRRRqDb03-5bTCIG7uCmW8o"
+		/>
+		<meta name="robots" content="index, follow" />
+		<meta
+			name="description"
+			content="Villa Malena is a private three-bedroom holiday villa with an infinity pool and panoramic Aegean views near Glossa, Skopelos."
+		/>
+		<meta
+			name="keywords"
+			content="Villa Malena, villa, Malena, &#924;&#945;&#955;&#949;&#957;&#945;, Skopelos, Glossa, Gl&oacute;ssa, Loutraki, accommodation, rent, Greece, holiday rental"
+		/>
+		<meta name="theme-color" content="#173d40" />
+		<title>Villa Malena | Private Villa in Skopelos</title>
+		<link rel="icon" href="img/logo.ico" />
+		<link
+			rel="preload"
+			href="img/main.jpg"
+			as="image"
+			fetchpriority="high"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/main.js" defer></script>
 	</head>
+	<body>
+		<a class="skip-link" href="#main">Skip to content</a>
 
-	<body class="body">
-		<div class="conImg" id="conImg">
-			<div class="mainLogo">
-				<div class="boxLogo">VILLA MALENA</div>
-				<div class="secTextLogo">HOLIDAY RENTAL VILLA ON SKOPELOS ISLAND.</div>
-				<div class="buttonLogo" id="buttonFindMore">FIND MORE</div>
-			</div>
-		</div>
+		<header class="hero" id="home">
+			<nav class="navbar" aria-label="Primary navigation">
+				<a class="brand" href="#home" aria-label="Villa Malena home"
+					><span>Villa</span> Malena</a
+				>
+				<button
+					class="nav-toggle"
+					type="button"
+					aria-expanded="false"
+					aria-controls="nav-links"
+				>
+					<span></span><span></span><span></span
+					><span class="sr-only">Open navigation</span>
+				</button>
+				<div class="nav-links" id="nav-links">
+					<a href="#villa" data-i18n="nav.villa">The villa</a>
+					<a href="#amenities" data-i18n="nav.amenities">Amenities</a>
+					<a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+					<a href="#location" data-i18n="nav.location">Location</a>
+					<a
+						class="nav-contact"
+						href="#contact"
+						data-i18n="nav.contact"
+						>Contact</a
+					>
+				</div>
+			</nav>
 
-		<div class="navbar" id="navbar">
-			<ul class="navMenu">
-               	<li class="navbarLi"><a href="#" class="navLogo" id="buttonLogo">VILLA MALENA</a></li>
-
-               	<span class="navBut">
-	                <li class="navbarLi"><a href="#" class="navTextMd" id="buttonServices">Services</a></li>
-	                <li class="navbarLi"><a href="#" class="navTextMd" id="buttonDescription">Description</a></li>
-	                <li class="navbarLi"><a href="#" class="navTextMd" id="buttonImages">Images</a></li>
-	                <li class="navbarLi"><a href="#" class="navTextMd" id="buttonMap">Map</a></li>
-	                <li class="navbarLi"><a href="#" class="navTextMd" id="buttonContact">Contact</a></li>
-	            </span>
-
-	            <li class="navMoreButLi">
-		            <a onclick="openNavBar()" class="button" aria-label="navigation">
-						<i class="fa fa-bars navMoreButI"></i>
-					</a>
-				</li>
-            </ul>
-
-            <div class="navButSm">
-            	<div class="navDivSm"><a href="#" class="navTextSm" id="buttonServicesSm">Services</a></div>
-				<div class="navDivSm"><a href="#" class="navTextSm" id="buttonDescriptionSm">Description</a></div>
-	            <div class="navDivSm"><a href="#" class="navTextSm" id="buttonImagesSm">Images</a></div>
-	            <div class="navDivSm"><a href="#" class="navTextSm" id="buttonMapSm">Map</a></div>
-	            <div class="navDivSm"><a href="#" class="navTextSm" id="buttonContactSm">Contact</a></div>
-            </div>
-		</div>
-
-		<div class="container conWhite" id="services">
-			<h3 class="conTitle whTitle">OUR SERVICES</h3>
-
-			<div>
-				<div class="chip">
-	                <i class="fas fa-users"></i>
-	                6 guests
-	            </div>
-	                
-	            <div class="chip">
-	                <i class="fas fa-bed"></i>
-	                3 bedrooms
-	            </div>
-
-	            <div class="chip">
-	                <i class="fas fa-bath"></i>
-	                2 bathrooms
-	            </div>
-            </div>
-
-            <div class="pure-g">
-                <div class="serBox pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <h3 class="whSubTitle">
-                        <i class="fas fa-bed"></i>
-                        Beds & Baths
-                        <i class="fas fa-bath"></i>
-                    </h3>
-
-                    <ul class="whText">
-                        <li>
-                            3 bedrooms
-                            <ul>
-                                <li>Bedroom 1: 2 single beds</li>
-                                <li>Bedroom 2: 1 double bed</li>
-                                <li>Bedroom 3: 1 double bed</li>
-                            </ul>
-                        </li>
-                        <li>2 bathrooms</li>
-                    </ul>
-                </div>
-
-                <div class="serBox pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <h3 class="whSubTitle">
-                        <i class="fas fa-child"></i>
-                        Family
-                    </h3>
-
-                    <ul class="whText">
-                        <li>Maximum occupation: 6 people</li>
-                    	<li>Great for children of all ages</li>
-                    </ul>
-                </div>
-
-                <div class="serBox pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <h3 class="whSubTitle">
-                        <i class="fas fa-plus"></i>
-                        Amenities
-                    </h3>
-
-                    <ul class="whText">
-                        <li><i class="fas fa-wifi"></i> Wi-Fi available</li>
-                        <li><i class="fas fa-swimming-pool"></i> Private outdoor pool</li>
-                        <li><i class="fas fa-bath"></i> Jacuzzi or hot tub</li>
-                        <li><i class="fas fa-snowflake"></i> Air conditioning</li>
-
-                        <span id="servicesToHide" style="display:none;">
-                            <li><i class="far fa-eye"></i> Mountain Views</li>
-                            <li><i class="far fa-eye"></i> Sea view</li>
-                            <li><i class="fas fa-fire"></i> Fireplace</li>
-                            <li><i class="fas fa-tv"></i> TV</li>
-                            <li><i class="fas fa-tv"></i> Satellite TV</li>
-                            <li><i class="fas fa-phone"></i> Telephone</li>
-                            <li><i class="fas fa-compact-disc"></i> CD player</li>
-                            <li><i class="fas fa-compact-disc"></i> DVD player</li>
-                            <li><i class="far fa-check-circle"></i> BBQ</li>
-                            <li><i class="far fa-check-circle"></i> Solarium or roof terrace</li>
-                            <li><i class="far fa-check-circle"></i> Central heating</li>
-                            <li><i class="far fa-check-circle"></i> Cooker</li>
-                            <li><i class="far fa-check-circle"></i> Freezer</li>
-                            <li><i class="far fa-check-circle"></i> Toaster</li>
-                            <li><i class="far fa-check-circle"></i> Dishwasher</li>
-                            <li><i class="far fa-check-circle"></i> Iron</li>
-                            <li><i class="far fa-check-circle"></i> Hair dryer</li>
-                            <li><i class="far fa-check-circle"></i> Towels provided</li>
-                            <li><i class="far fa-check-circle"></i> Private garden</li>
-                            <li><i class="far fa-check-circle"></i> Patio</li>
-                            <li><i class="far fa-check-circle"></i> Balcony or terrace</li>
-                            <li><i class="far fa-check-circle"></i> Fridge</li>
-                            <li><i class="far fa-check-circle"></i> Microwave</li>
-                            <li><i class="far fa-check-circle"></i> Kettle</li>
-                            <li><i class="far fa-check-circle"></i> Washing machine</li>
-                            <li><i class="far fa-check-circle"></i> Linen provided</li>
-                        </span>
-
-                        <a class="showMoreSerBut" id="servicesMoreButton">Show More</a>
-                    </ul>
-                </div>
-
-                <div class="serBox pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <h3 class="whSubTitle">
-                        <i class="fas fa-car"></i>
-                        Access
-                    </h3>
-                    <ul class="whText">
-                        <li>Parking</li>
-                        <li>Secure parking</li>
-                    </ul>
-                </div>
-            </div>
-		</div>
-
-		<div class="container conBlue" id="description">
-			<h3 class="conTitle blTitle">DESCRIPTION</h3>
-			
-			<div class="blText">
-				<p>
-                    Malena is a newly built luxury, spacious villa (130sq meters) with private swimming pool, set in a picturesque, quiet location, less than one kilometre from the traditional Greek village of <b>Glossa</b> (walking distance).
-                </p>
-
-                <p>
-                    This charming resort, built in a private property of 5 acres, offers guests the opportunity to admire a breathtaking sea view overlooking Aegean and fantastic sunsets.
-                </p>
-
-                <p>
-                    Free Wi Fi is available. Also you can use the telephone for local calls free of charge.
-                </p>
-
-                <p>
-                    From infinity style pool you can look over a pine-cloaked hillside, the island of Skiathos and all the way out to the sea.
-                </p>
-
-                <span id="descriptionToHide" style="display:none;">
-
-                <p>
-                    The villa is situated four kilometres from Loutraki harbour, where you can find a selection of shops, cafeterias and restaurants by the sea.
-                </p>
-
-                <p>
-                    The detached villa Malena is tastefully furnished and the ground floor consists of a spacious, airy and light lounge with a satellite TV and a DVD player, a dining room, a bathroom and a fully equipped open-planned kitchen, which communicates with a covered terrace, where you may have breakfast or meal by staring to the magnificent sea view.
-                </p>
-
-                <p>
-                    Upstairs the villa boasts comfortable accommodation in two double and one twin air conditioned bedrooms, also features one jacuzzi bathroom. All bedrooms are airy, sunny and share a large veranda, where you can admire the truly panoramic view.
-                </p>
-
-                <p>
-                    The villa is ideal for couples and families with children, who want to spend their vacations in a luxury, quiet, totaly private surrounding with magnificent view to the sea and the islands of Skiathos.
-                </p>
-
-                <p>
-                    For the construction high quality materials have been used such as italian wardrobes and cupbords, double glaze windows etc.
-                </p>
-
-                <p>
-                    A short drive distance (6km) is St. John (church on the rock where Mama Mia was filmed) and also near are the famous beaches Kastani, Milia and Panormos bay.
-                </p>
-
-                </span>
-
-                <p>
-                    <a class="showMoreSerBut" id="descriptionMoreButton">Show More</a>
-                </p>
-			</div>
-		</div>
-
-		<div class="container conWhite" id="images">
-            <div class="imagesTab" id="imagesTab">
-				<div class="title"><lang id="imagesTab_title"></lang></div>
-
-				<div class="main">
-					<div class="arrow_left" onclick="imageSliderAdd(-1);"><i class="fas fa-chevron-left"></i></div>
-					<div class="arrow_right" onclick="imageSliderAdd(+1);"><i class="fas fa-chevron-right"></i></div>
-
-					<div class="img">
-						<div class="real_img">
-							<img height="100%" width="100%" loading="lazy" src="" id="imagesTab_img" alt="">
-						</div>
-
-						<div class="description" id="imagesTab_description">
-						</div>
-					</div>
+			<div class="hero-overlay"></div>
+			<div class="hero-copy">
+				<p class="kicker" data-i18n="hero.kicker">
+					Glossa &middot; Skopelos &middot; Greece
+				</p>
+				<h1>
+					<span data-i18n="hero.title">Above the Aegean,</span
+					><br /><em data-i18n="hero.title_emphasis"
+						>made for slow days.</em
+					>
+				</h1>
+				<p class="hero-intro" data-i18n="hero.intro">
+					A private island villa for six, with an infinity pool, quiet
+					surroundings and panoramic sea views.
+				</p>
+				<div class="hero-actions">
+					<a
+						class="button button-light"
+						href="#villa"
+						data-i18n="hero.explore"
+						>Explore the villa</a
+					>
+					<a class="text-link light-link" href="#contact"
+						><span data-i18n="hero.enquire"
+							>Enquire about your stay</span
+						>
+						<span aria-hidden="true">&nearr;</span></a
+					>
 				</div>
 			</div>
-		</div>
 
-		<div class="container conBlue" id="map">
-			<h3 class="conTitle blTitle">MAP LOCATION</h3>
+			<div class="hero-facts" aria-label="Villa highlights">
+				<div>
+					<strong>6</strong
+					><span data-i18n="facts.guests">Guests</span>
+				</div>
+				<div>
+					<strong>3</strong
+					><span data-i18n="facts.bedrooms">Bedrooms</span>
+				</div>
+				<div>
+					<strong>2</strong
+					><span data-i18n="facts.bathrooms">Bathrooms</span>
+				</div>
+				<div>
+					<strong>130</strong
+					><span data-i18n="facts.area">m&sup2; of space</span>
+				</div>
+			</div>
+		</header>
 
+		<main id="main">
+			<section class="story section" id="villa">
+				<div class="story-heading reveal">
+					<p class="kicker dark" data-i18n="villa.kicker">
+						The villa
+					</p>
+					<h2>
+						<span data-i18n="villa.title">Space to breathe.</span
+						><br /><span data-i18n="villa.title_emphasis"
+							>Views to remember.</span
+						>
+					</h2>
+				</div>
+				<div class="story-grid">
+					<div class="story-copy reveal">
+						<p class="lead" data-i18n="villa.lead">
+							Villa Malena is a spacious 130m&sup2; retreat set on
+							five private acres, less than one kilometre from the
+							traditional village of Glossa.
+						</p>
+						<p data-i18n="villa.body">
+							Designed for couples and families with children of
+							all ages, the villa combines total privacy with open
+							views across pine-covered hills, Skiathos and the
+							Aegean. The infinity-style pool and broad terraces
+							make sunsets part of every day.
+						</p>
+						<a class="text-link" href="#amenities"
+							><span data-i18n="villa.link"
+								>See everything included</span
+							>
+							<span aria-hidden="true">&darr;</span></a
+						>
+					</div>
+					<div class="story-images reveal">
+						<figure class="image-primary">
+							<img
+								src="img/HousePhotos/house5.jpg"
+								alt="Villa Malena and its private pool"
+								loading="lazy"
+							/>
+						</figure>
+						<figure class="image-secondary">
+							<img
+								src="img/HousePhotos/house18.jpg"
+								alt="Aegean view from Villa Malena"
+								loading="lazy"
+							/>
+						</figure>
+					</div>
+				</div>
+			</section>
+
+			<section class="amenities section" id="amenities">
+				<div class="amenities-intro reveal">
+					<div>
+						<p class="kicker" data-i18n="amenities.kicker">
+							Comfort, inside and out
+						</p>
+						<h2>
+							<span data-i18n="amenities.title"
+								>Everything you need,</span
+							><br /><em data-i18n="amenities.title_emphasis"
+								>nothing between you and the view.</em
+							>
+						</h2>
+					</div>
+				</div>
+
+				<div class="amenity-grid">
+					<article class="amenity-card photo-card sleep-card reveal">
+						<div class="card-photo">
+							<img
+								src="img/HousePhotos/house13.jpg"
+								alt="Bedroom at Villa Malena"
+								loading="lazy"
+							/>
+						</div>
+						<div class="card-content">
+							<h3 data-i18n="amenities.sleep.title">
+								Sleep &amp; refresh
+							</h3>
+							<p data-i18n="amenities.sleep.body">
+								Three air-conditioned bedrooms - two double and
+								one twin-share two bathrooms, including an
+								upstairs jacuzzi bathroom. All bedrooms open
+								onto a large shared veranda.
+							</p>
+							<ul class="tags">
+								<li data-i18n="amenities.sleep.tag1">
+									Sleeps 6
+								</li>
+								<li data-i18n="amenities.sleep.tag2">
+									Linen provided
+								</li>
+								<li data-i18n="amenities.sleep.tag3">
+									Towels provided
+								</li>
+								<li data-i18n="amenities.sleep.tag4">
+									Hair dryer
+								</li>
+							</ul>
+						</div>
+					</article>
+					<article class="amenity-card photo-card reveal">
+						<div class="card-photo">
+							<img
+								src="img/HousePhotos/house1.jpg"
+								alt="Private infinity-style pool at Villa Malena"
+								loading="lazy"
+							/>
+						</div>
+						<div class="card-content">
+							<h3 data-i18n="amenities.outdoor.title">
+								Pool &amp; outdoors
+							</h3>
+							<p data-i18n="amenities.outdoor.body">
+								Private outdoor pool, jacuzzi or hot tub,
+								private garden, patio, balcony or terrace, roof
+								terrace, BBQ, and sea and mountain views.
+							</p>
+						</div>
+					</article>
+					<article class="amenity-card photo-card reveal">
+						<div class="card-photo">
+							<img
+								src="img/HousePhotos/house4.jpg"
+								alt="Living room at Villa Malena"
+								loading="lazy"
+							/>
+						</div>
+						<div class="card-content">
+							<h3 data-i18n="amenities.living.title">
+								Living well
+							</h3>
+							<p data-i18n="amenities.living.body">
+								Generous shared spaces include a bright lounge
+								and dining room with fireplace, air
+								conditioning, central heating, Wi-Fi, free local
+								telephone calls, TV, satellite TV, CD and DVD
+								players.
+							</p>
+						</div>
+					</article>
+					<article class="amenity-card photo-card reveal">
+						<div class="card-photo">
+							<img
+								src="img/HousePhotos/house6.jpg"
+								alt="Kitchen at Villa Malena"
+								loading="lazy"
+							/>
+						</div>
+						<div class="card-content">
+							<h3 data-i18n="amenities.kitchen.title">
+								Kitchen &amp; practical
+							</h3>
+							<p data-i18n="amenities.kitchen.body">
+								A fully equipped open-plan kitchen with cooker,
+								fridge, freezer, microwave, kettle, toaster and
+								dishwasher, plus a washing machine and iron.
+							</p>
+						</div>
+					</article>
+					<article class="amenity-card access-card reveal">
+						<h3 data-i18n="amenities.access.title">Easy access</h3>
+						<p data-i18n="amenities.access.body">
+							Private and secure parking, with Glossa within
+							walking distance and Loutraki harbour four
+							kilometres away.
+						</p>
+					</article>
+				</div>
+			</section>
+			<section class="stay section">
+				<div class="stay-image reveal">
+					<img
+						src="img/HousePhotos/house21.jpg"
+						alt="Covered terrace and dining area at Villa Malena"
+						loading="lazy"
+					/>
+				</div>
+				<div class="stay-copy reveal">
+					<p class="kicker dark" data-i18n="stay.kicker">
+						Made for island living
+					</p>
+					<h2 data-i18n="stay.title">
+						Open, airy and connected to the landscape.
+					</h2>
+					<p data-i18n="stay.body1">
+						The ground floor brings together a light-filled lounge,
+						dining room, bathroom and open-plan kitchen. It flows
+						directly onto a covered terrace for breakfast and meals
+						overlooking the sea.
+					</p>
+					<p data-i18n="stay.body2">
+						Upstairs, two double bedrooms and one twin bedroom share
+						a large veranda and panoramic outlook. High-quality
+						finishes&mdash;including Italian wardrobes and
+						cupboards&mdash;double-glazed windows and generous
+						spaces make the villa comfortable in every season.
+					</p>
+				</div>
+			</section>
+
+			<section
+				class="gallery-section"
+				id="gallery"
+				aria-labelledby="gallery-title"
+			>
+				<div class="gallery-heading reveal">
+					<div>
+						<p class="kicker dark" data-i18n="gallery.kicker">
+							Inside Villa Malena
+						</p>
+						<h2 id="gallery-title" data-i18n="gallery.title">
+							A closer look
+						</h2>
+					</div>
+					<p class="gallery-count" aria-live="polite">
+						<span id="current-image">01</span> / 27
+					</p>
+				</div>
+				<div
+					class="gallery reveal"
+					role="region"
+					aria-roledescription="carousel"
+					aria-label="Villa Malena image gallery"
+					tabindex="0"
+				>
+					<div class="gallery-frame">
+						<img
+							id="gallery-image"
+							src="img/HousePhotos/house1.jpg"
+							alt="Villa Malena photo 1 of 27"
+						/><button
+							class="gallery-button previous"
+							type="button"
+							aria-label="Previous image"
+						>
+							&lsaquo;</button
+						><button
+							class="gallery-button next"
+							type="button"
+							aria-label="Next image"
+						>
+							&rsaquo;
+						</button>
+					</div>
+					<div
+						class="thumbnail-strip"
+						id="thumbnail-strip"
+						aria-label="Choose an image"
+					></div>
+				</div>
+			</section>
+
+			<section class="location section" id="location">
+				<div class="location-copy reveal">
+					<p class="kicker dark" data-i18n="location.kicker">
+						Discover Skopelos
+					</p>
+					<h2 data-i18n="location.title">
+						Close to the island&rsquo;s most memorable places.
+					</h2>
+					<p data-i18n="location.body">
+						Loutraki&rsquo;s harbour, shops, caf&eacute;s and
+						seafront restaurants are four kilometres away. St.
+						John&mdash;the church on the rock featured in Mamma
+						Mia&mdash;is six kilometres away, with Kastani, Milia
+						and Panormos beaches also nearby.
+					</p>
+					<div class="distance-list">
+						<p>
+							<strong>1 km</strong
+							><span data-i18n="location.glossa">to Glossa</span>
+						</p>
+						<p>
+							<strong>4 km</strong
+							><span data-i18n="location.loutraki"
+								>to Loutraki harbour</span
+							>
+						</p>
+						<p>
+							<strong>6 km</strong
+							><span data-i18n="location.stjohn"
+								>to St. John</span
+							>
+						</p>
+					</div>
+				</div>
+				<div class="map-frame reveal">
+					<iframe
+						loading="lazy"
+						title="Villa Malena location on Google Maps"
+						src="https://maps.google.com/maps?q=39.170924%2C%2023.626727&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+						allowfullscreen
+					></iframe>
+				</div>
+			</section>
+
+			<section class="contact section" id="contact">
+				<div class="contact-background" aria-hidden="true"></div>
+				<div class="contact-content reveal">
+					<p class="kicker" data-i18n="contact.kicker">
+						Your Skopelos stay starts here
+					</p>
+					<h2>
+						<span data-i18n="contact.title">Contact us for</span
+						><br /><em data-i18n="contact.title_emphasis"
+							>more information.</em
+						>
+					</h2>
+					<div class="contact-actions">
+						<a class="contact-method" href="tel:+306945249464">
+							<span class="contact-label" data-i18n="contact.call"
+								>Call us</span
+							>
+							<strong>(+30) 69 4524 9464</strong>
+						</a>
+						<a
+							class="contact-method"
+							href="mailto:kallorf26@gmail.com"
+						>
+							<span
+								class="contact-label"
+								data-i18n="contact.email"
+								>Email us</span
+							>
+							<strong>kallorf26@gmail.com</strong>
+						</a>
+						<a
+							class="contact-method facebook-method"
+							href="https://www.facebook.com/Villa-Malena-Skopelos-1933760483348052/"
+							target="_blank"
+							rel="noopener"
+							aria-label="Villa Malena on Facebook"
+						>
+							<span
+								class="contact-label"
+								data-i18n="contact.facebook"
+								>Facebook</span
+							>
+							<strong
+								><span data-i18n="contact.facebook_action"
+									>Follow Villa Malena</span
+								>
+								<span aria-hidden="true">&nearr;</span></strong
+							>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<a class="brand footer-brand" href="#home"
+				><span>Villa</span> Malena</a
+			>
 			<div>
-				<iframe loading="lazy" style="height:70vh;" width="100%" height="500" src="https://maps.google.com/maps?q=39.170924%2C%2023.626727&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				<p>
+					Copyright &copy; 2021 Villamalenaskopelos.com | All Rights
+					Reserved
+				</p>
+				<p>
+					License number EOT (Greek Tourism Organization):
+					0756K9200041001
+				</p>
 			</div>
-		</div>
-
-		<div class="container conWhite" id="contact">
-			<h3 class="conTitle whTitle">CONTACT US FOR MORE INFORMATION</h3>
-
-			<div class="pure-g">
-				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                    <h4 class="whText">
-						<span class="contactTitle">Telephone:</span>
-						<a class="contactText" href="tel:+306945249464">(+30) 69 4524 9464</a>
-                    </h4>
-                        
-                    <h4 class="whText">
-                        <span class="contactTitle">Email:</span>
-                        <a class="contactText" href="mailto:kallorf26@gmail.com">kallorf26@gmail.com</a>
-                	</h4>
-                </div>
-
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-                    <h4>
-                        <a href="https://www.facebook.com/Villa-Malena-Skopelos-1933760483348052/" target="_blank" aria-label="Facebook" rel="noopener">
-                            <i class="fab fa-facebook fa-5x" style="color:#2d3e50;"></i>
-                        </a>
-                    </h4>
-                </div>
-			</div>
-		</div>
-
-		<div class="footer conBlue">
-			<div class="pure-g">
-				<div class="pure-u-1 pure-u-md-2-5">Copyright &copy; 2021 Villamalenaskopelos.com | All Rights Reserved</div>
-				<div class="pure-u-1 pure-u-md-2-5">License number EOT (Greek Tourism  Organization): 0756K9200041001</div>
-				<div class="pure-u-1 pure-u-md-1-6">Developed by <a href="https://divouz.github.io/DiVouz/" target="_blank" aria-label="Creator" rel="noopener" class="creator">DiVouz</a></div>
-			</div>
-		</div>
-
-		<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
-		<script type="text/javascript" src="js/main.min.js"></script>
+			<p>
+				Developed by
+				<a
+					href="https://divouz.github.io/DiVouz/"
+					target="_blank"
+					rel="noopener"
+					aria-label="Creator"
+					>DiVouz</a
+				>
+			</p>
+		</footer>
 	</body>
 </html>
